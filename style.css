@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 1000px
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 100px;
+  z-index: 1000;
+  transition: 0.6s;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background-color: #fff;
+  border-bottom: 1px solid (0, 0, 0, .1);
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 300;
+  transition: 0.6s;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000;
+}
+
+/*Home*/
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("image/home2.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-rendering: optimizeLegibility;
+}
+
+.banner .titolo p.primo {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 20px auto;
+}
+
+.banner .titolo h1 {
+  color: #fff;
+  font-size: 90px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1em;
+}
+
+.banner .titolo p.secondo {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 20px auto;
+}
+
+.banner .titolo p.secondo span {
+  background-color: #4978ff;
+}
+
+.banner .titolo p.terzo {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 40px auto;
+}
+
+/*About*/
+.sec {
+  background: #fff;
+  padding: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec .content {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.row {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+
+p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/*Servizi*/
+.servizi {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.servizi .box {
+  width: 300px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.servizi .box .iconBx {
+  margin-top: 25px;
+}
+
+.servizi .box .iconBx img {
+  max-width: 70px;
+  margin-bottom: 15px;
+}
+
+.servizi .box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*Steve Jobs*/
+.stat {
+  background: url(image/apple2.jpg);
+  background-size: cover;
+  padding-top: 250px;
+  margin-top: -200px;
+  min-height 65vh;
+}
+
+.stat p,
+.stat h3 {
+  color: #fff;
+}
+
+.stat p {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: -200px;
+}
+
+.stat h3 {
+  font-size: 25px;
+  font-weight: 200;
+}
+
+/*Contatti*/
+.contatti {
+  background: #000;
+  justify-content: space-around;
+}
+
+.contatti .circle {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle.circle1 {
+  width: 400px;
+  height: 400px;
+  float: left;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.contatti h2,
+.contatti p {
+  color: #fff;
+}
+
+.sci {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.sci ul {
+  display: flex;
+}
+
+.sci ul li {
+  list-style: none;
+}
+
+.sci ul li a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.sci ul li a img {
+  filter: invert(1);
+  max-width: 40px;
+}
+
+.sci ul li a:hover img {
+  opacity: 0.5;
+}
+
+.toggle {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .toggle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .toggle:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    z-index: 1;
+    box-shadow: 0 10px 0 #000;
+    transition: 0.5s;
+  }
+
+  .toggle:after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    z-index: 1;
+    transition: 0.5s;
+  }
+
+  header,
+  header.sticky {
+    padding: 5px 50px;
+    background: #fff;
+  }
+
+  header ul {
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: auto;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  header.active ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    padding-top: 20px;
+  }
+
+  header.active ul li a {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  header .logo,
+  header ul li a {
+    color: #000;
+  }
+
+  .banner {
+    background-position: center;
+  }
+
+  .banner .titolo p.primo {
+    font-size: 35px;
+    padding: 0 50px;
+  }
+
+  .banner .titolo h1 {
+    font-size: 60px;
+    padding: 0 50px;
+  }
+
+  .banner .titolo p.secondo {
+    font-size: 35px;
+    padding: 0 50px;
+  }
+
+  .banner .titolo p.terzo {
+    font-size: 20px;
+    padding: 0 50px;
+  }
+
+  .sec {
+    padding: 100px 50px 50px 50px;
+  }
+
+  .servizi .box {
+    width: 100%;
+  }
+
+  .stats {
+    padding-top: 250px;
+  }
+
+  .sci {
+    margin: 20px;
+  }
+
+  .sci ul li a img {
+    font-size: 24px;
+  }
+}
